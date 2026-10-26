@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Khám phá cận cảnh dĩa Cơm tấm Ba Ghiền nướng sườn than hoa thơm nức mũi qua video trải nghiệm và âm thanh thực cảnh sống động.">
+  <title>Cơm Tấm Sườn Bì Chả Sài Gòn — Tinh hoa Ẩm thực TP.HCM</title>
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+  <!-- 1. HEADER CHÍNH & ĐIỀU HƯỚNG -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="Trang chủ Ẩm thực Sài Gòn">
+        <img src="img/logo_saigon_food.svg" alt="Logo Sài Gòn Ẩm thực và Du lịch" class="brand-logo" width="280" height="60">
+      </a>
+      <button class="nav-toggle" aria-label="Mở menu điều hướng" aria-expanded="false">☰</button>
+      <nav aria-label="Điều hướng chính của trang">
+        <ul class="nav-menu">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="mon-an.html">Món ngon Sài Gòn</a></li>
+          <li><a href="dish-detail.html" aria-current="page">Video ẩm thực</a></li>
+          <li><a href="sitemap.html">Sơ đồ site</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 2. BREADCRUMB PHÂN CẤP -->
+  <div class="breadcrumb-container" aria-label="Đường dẫn phân cấp">
+    <ol class="breadcrumb-list">
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="mon-an.html">Món ngon Sài Gòn</a></li>
+      <li aria-current="page">Cơm tấm Sườn Bì Chả</li>
+    </ol>
+  </div>
+
+  <!-- 3. NỘI DUNG CHÍNH (MAIN) -->
+  <main class="main-content">
+    
+    <article aria-labelledby="article-title">
+      <header style="margin-bottom:1.5rem;">
+        <h1 id="article-title" style="font-size:1.6rem; color:#C2410C; margin-bottom:0.5rem;">
+          Trải Nghiệm Hương Vị Khói Than Cơm Tấm Ba Ghiền — Quán Ngon Gần Nửa Thế Kỷ
+        </h1>
+        <p style="font-size:0.875rem; color:#78716C;">
+          Địa chỉ: <strong>84 Đặng Văn Ngữ, P.10, Q. Phú Nhuận, TP.HCM</strong> | Thời gian phục vụ: <strong>07:30 - 21:00</strong>
+        </p>
+      </header>
+
+      <!-- KHUNG VIDEO HTML5 CHÍNH (aspect-ratio: 16/9, max-width: 960px) -->
+      <div style="max-width:960px; margin:0 auto 1.5rem;">
+        <div class="video-player-wrapper">
+          <video id="mainVideo" poster="img/poster_video.webp" preload="metadata" playsinline>
+            <source src="video/intro_food.mp4" type="video/mp4">
+            <source src="video/intro_food.webm" type="video/webm">
+            <track src="media/subtitles_vi.vtt" kind="subtitles" srclang="vi" label="Tiếng Việt" default>
+            Trình duyệt của bạn không hỗ trợ thẻ video HTML5.
+          </video>
+        </div>
+
+        <!-- Điều khiển JavaScript tùy biến -->
+        <div class="custom-video-controls" role="region" aria-label="Thanh điều khiển video">
+          <button id="btnPlayPause" class="btn-media" aria-label="Phát hoặc tạm dừng video">▶ Phát</button>
+          <div class="progress-container" id="progressWrap" role="progressbar" aria-label="Tiến độ phát video" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <div id="pBarFill" class="progress-bar-fill"></div>
+          </div>
+          <span id="timeText" class="time-display" aria-live="off">00:00 / 00:00</span>
+        </div>
+      </div>
+
+      <!-- BÀI VIẾT PHÂN TÍCH HƯƠNG VỊ -->
+      <section style="line-height:1.7; font-size:1rem; color:#1C1917; margin-bottom:2rem;">
+        <h2 style="font-size:1.25rem; color:#C2410C; margin-bottom:0.75rem;">1. Miếng Sườn Cốt Lết Khổng Lồ Nướng Than Hoa</h2>
+        <p style="margin-bottom:1rem;">
+          Điểm làm nên thương hiệu của quán cơm tấm Ba Ghiền chính là miếng sườn cốt lết dày dặn, được ướp theo bí quyết gia truyền từ mật ong, tỏi băm và sữa đặc. Khi đặt lên vỉ than hoa đỏ rực, mỡ chảy xèo xèo bốc khói nghi ngút, đánh thức khứu giác của mọi thực khách từ đầu con hẻm.
+        </p>
+
+        <figure style="margin:1.5rem 0; background:#FFFDF9; border:1px solid #E7E5E4; border-radius:6px; overflow:hidden;">
+          <img src="img/banner_hero_800w.webp" alt="Khói sườn nướng than hoa nghi ngút tại quán Cơm tấm Sài Gòn" width="800" height="350" loading="lazy">
+          <figcaption style="padding:0.5rem 1rem; font-size:0.85rem; color:#78716C; background:#F5F5F4;">
+            Hình 1: Miếng sườn được nướng vàng ruộm trên than hoa đỏ rực, ngập tràn mỡ hành óng ả.
+          </figcaption>
+        </figure>
+
+        <h2 style="font-size:1.25rem; color:#C2410C; margin-bottom:0.75rem;">2. Chén Nước Mắm Kẹo &amp; Đồ Chua Cân Bằng Vị Giác</h2>
+        <p style="margin-bottom:1rem;">
+          Không thể thiếu một chén nước mắm pha kẹo sánh sệt, cay nồng vị ớt tươi băm nhuyễn và vài lát củ cải trắng, cà rốt ngâm giấm đường chua thanh giòn rụm giúp trung hòa vị béo ngậy của thịt sườn.
+        </p>
+      </section>
+
+      <!-- BẢNG SO SÁNH HIỆU NĂNG TÍNH NĂNG CỘNG ĐIỂM -->
+      <section style="background:#FFFFFF; border:1px solid #E7E5E4; border-radius:8px; padding:1.25rem; margin-bottom:2rem;">
+        <h2 style="font-size:1.15rem; color:#C2410C; margin-bottom:0.5rem;">Bảng So sánh Hiệu năng: Nạp ngầm AJAX (fetch) vs Tải lại Toàn trang (Reload)</h2>
+        <p style="font-size:0.875rem; color:#78716C; margin-bottom:1rem;">
+          Số liệu đo lường thực tế bằng công cụ Chrome DevTools Network (môi trường mạng 4G di động):
+        </p>
+        <div style="overflow-x:auto;">
+          <table style="width:100%; border-collapse:collapse; font-size:0.875rem; text-align:left;">
+            <thead>
+              <tr style="background:#C2410C; color:#fff;">
+                <th style="padding:0.6rem 0.8rem; border:1px solid #E7E5E4;">Tiêu chí đo lường</th>
+                <th style="padding:0.6rem 0.8rem; border:1px solid #E7E5E4;">Tải lại toàn trang (Full Reload)</th>
+                <th style="padding:0.6rem 0.8rem; border:1px solid #E7E5E4;">Nạp ngầm AJAX fetch()</th>
+                <th style="padding:0.6rem 0.8rem; border:1px solid #E7E5E4;">Tỷ lệ tối ưu</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:0.5rem 0.8rem; border:1px solid #E7E5E4; font-weight:600;">Dung lượng mạng truyền tải</td>
+                <td style="padding:0.5rem 0.8rem; border:1px solid #E7E5E4;">~315 KB (HTML + CSS + Assets)</td>
+                <td style="padding:0.5rem 0.8rem; border:1px solid #E7E5E4;">1.6 KB (Tệp JSON)</td>
+                <td style="padding:0.5rem 0.8rem; border:1px solid #E7E5E4; color:#16A34A; font-weight:bold;">Giảm 99.5%</td>
+              </tr>
+              <tr style="background:#FFFDF9;">
+                <td style="padding:0.5rem 0.8rem; border:1px solid #E7E5E4; font-weight:600;">Thời gian phản hồi (Duration)</td>
+                <td style="padding:0.5rem 0.8rem; border:1px solid #E7E5E4;">380 ms – 520 ms</td>
+                <td style="padding:0.5rem 0.8rem; border:1px solid #E7E5E4;">40 ms – 65 ms</td>
+                <td style="padding:0.5rem 0.8rem; border:1px solid #E7E5E4; color:#16A34A; font-weight:bold;">Nhanh hơn 88%</td>
+              </tr>
+              <tr>
+                <td style="padding:0.5rem 0.8rem; border:1px solid #E7E5E4; font-weight:600;">Hiện tượng nhấp nháy màn hình</td>
+                <td style="padding:0.5rem 0.8rem; border:1px solid #E7E5E4; color:#DC2626;">Có (Mất trạng thái video)</td>
+                <td style="padding:0.5rem 0.8rem; border:1px solid #E7E5E4; color:#16A34A;">Không (Video vẫn phát tiếp)</td>
+                <td style="padding:0.5rem 0.8rem; border:1px solid #E7E5E4; font-weight:bold;">Trải nghiệm vượt trội</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- KHU VỰC NẠP DỮ LIỆU TỰ ĐỘNG BẰNG AJAX FETCH -->
+      <section class="ajax-section" aria-labelledby="related-title">
+        <h2 id="related-title" class="section-title">Món ngon &amp; Địa điểm liên quan (Bấm để tải thêm)</h2>
+        <div id="ajaxList" class="ajax-list"></div>
+        <button id="btnLoadMore" class="btn-loadmore">Khám phá thêm món ngon liên quan</button>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- 4. FOOTER TOÀN SITE -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>Sài Gòn Food Tour — TP.HCM</h3>
+        <p>Cẩm nang đa phương tiện khám phá ẩm thực đường phố và đời sống du lịch Sài Gòn.</p>
+        <p>Địa điểm kết nối: Chợ Bến Thành, Phố ẩm thực Vĩnh Khánh, Hẻm 284 Lê Văn Sỹ.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Liên kết nhanh</h3>
+        <ul>
+          <li><a href="index.html">Trang chủ ẩm thực</a></li>
+          <li><a href="mon-an.html">Danh mục 4 món ăn biểu tượng</a></li>
+          <li><a href="dish-detail.html">Video review Cơm tấm Ba Ghiền</a></li>
+          <li><a href="sitemap.html">Sơ đồ cấu trúc site (Sitemap)</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Thông tin Sinh viên thực hiện</h3>
+        <p><strong>Họ và tên:</strong> Vũ Hoàng Phát</p>
+        <p><strong>Mã số sinh viên:</strong> 21143011</p>
+        <p><strong>Học phần:</strong> Web Multimedia — Tuần 9</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Saigon Food Tour. Bản quyền thuộc về Vũ Hoàng Phát (MSSV: 21143011).</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
