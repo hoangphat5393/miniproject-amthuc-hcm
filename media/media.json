@@ -1,0 +1,34 @@
+[
+  {
+    "id": "food-01",
+    "title": "Hủ tiếu Nam Vang gia truyền 3 đời tại Quận 5",
+    "duration": "03:45",
+    "type": "Video Full HD",
+    "thumb": "img/card_comtam.webp",
+    "desc": "Nước lèo trong vắt ninh từ xương ống và tôm khô thơm ngọt tự nhiên."
+  },
+  {
+    "id": "food-02",
+    "title": "Bí quyết nướng sườn cơm tấm mềm ngọt mọng nước",
+    "duration": "05:20",
+    "type": "Video Full HD",
+    "thumb": "img/card_banhmi.webp",
+    "desc": "Công thức ướp sườn bí truyền bằng sữa đặc và mật ong rừng nguyên chất."
+  },
+  {
+    "id": "food-03",
+    "title": "Podcast số 01: Thanh âm Chợ đêm Bến Thành lúc 2 giờ sáng",
+    "duration": "08:15",
+    "type": "Audio MP3",
+    "thumb": "img/card_phalau.webp",
+    "desc": "Tiếng dao thớt lách cách, tiếng rao hàng thân thương của những con người thức cùng thành phố."
+  },
+  {
+    "id": "food-04",
+    "title": "Quán Cà phê Vợt hơn 70 năm tuổi bên góc hẻm Phan Đình Phùng",
+    "duration": "04:10",
+    "type": "Video 720p",
+    "thumb": "img/card_caphevot.webp",
+    "desc": "Nét văn hóa cà phê vợt đun trên bếp than củi giữ ấm suốt ngày đêm."
+  }
+]
